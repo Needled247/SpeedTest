@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5">
+    <servlet>
+        <servlet-name>ServerTool</servlet-name>
+        <servlet-class>com.gtao.net.ServerTool</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServerTool</servlet-name>
+        <url-pattern>/ServerTool</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SaveReport</servlet-name>
+        <servlet-class>com.gtao.Servlet.SaveReport</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SaveReport</servlet-name>
+        <url-pattern>/SaveReport</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UrlJson</servlet-name>
+        <servlet-class>com.gtao.net.UrlJson</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UrlJson</servlet-name>
+        <url-pattern>/UrlJson</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
